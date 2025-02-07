@@ -1,0 +1,166 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header with Hero Section */
+header {
+    background: url('./Logo.png') no-repeat center center; /* Ensure the background is centered */
+    background-size: contain; /* Adjust the image size as needed */
+    color: blue;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    position: relative;
+    min-height: 300px; /* Adjust the height of your header */
+}
+
+
+header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+    background: #002244;
+    animation: slideDown 1s ease-in-out;
+    margin: 0; /* Ensures no margin around the navigation */
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative; /* Makes sure the link is clickable */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block; /* Makes the anchor a block-level element for better click area */
+    padding: 10px 20px; /* Adds padding for a larger clickable area */
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Company Profile Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+/* Services Section */
+#services {
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-box {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #002244;
+    color: #fff;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
