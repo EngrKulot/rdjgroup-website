@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDJ GROUP OF COMPANIES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        </header>
+        <nav>
+            <ul>
+                <hr/><li><a href="#about">About Us</a></li><hr/>
+                <li><a href="#services">Services</a></li><hr/>
+                <li><a href="#contact">Contact</a></li><hr/>
+                
+            </ul>
+        </nav>
+    
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to RDJ GROUP OF COMPANIES. We are committed to excellence and innovation in our industry.</p>
+        <div class="profile-card">
+            <h3>Our Vision</h3>
+            <p>To be a provide you a great service.</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fas fa-cogs"></i>
+                <h3>Service 1</h3>
+                <p>Details about service 1.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-briefcase"></i>
+                <h3>Service 2</h3>
+                <p>Details about service 2.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-chart-line"></i>
+                <h3>Service 3</h3>
+                <p>Details about service 3.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 601 Gensan Dr, Koronadal City, South Cotabato</p>
+            <p><strong>Telephone Number:</strong> 520-1251</p>
+            <p><strong>Email:</strong> info@rdjgroup.com</p>
+        </div>
+        
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13229.919530222276!2d124.98108762432328!3d6.470698708491587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32b5602a3b116cb5%3A0x987b1f93a5d416f9!2s601%20Gensan%20Dr%2C%20Koronadal%20City%2C%20South%20Cotabato!5e0!3m2!1sen!2sph!4v1675690618629!5m2!1sen!2sph" 
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 1997 RDJ GROUP OF COMPANIES. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
